@@ -1,0 +1,124 @@
+^contentpage {
+	background-color: gray;
+}
+
+.labelToRemember {
+	font-size: small;
+}
+
+.helloLabel {
+	font-size: large;
+}
+
+.white {
+	color: black;
+	background-color: #d7d7d7;
+	font-style: bold;
+	font-family: Arial;
+}
+
+.checkBox {
+	color: white;
+}
+
+.BoldLineLabel {
+	font-style: bold;
+	text-decoration: underline;
+}
+
+#slider1 {
+	-xf-max-track-color: #40cfff;
+	-xf-min-track-color: #40cfff;
+	-xf-thumb-color: #00000000;
+}
+
+#slider2 {
+	-xf-max-track-color: #40cfff;
+	-xf-min-track-color: #40cfff;
+	-xf-thumb-color: #40cfff;
+}
+
+#slider4 {
+	-xf-max-track-color: #40cfff;
+	-xf-min-track-color: #40cfff;
+	-xf-thumb-color: #48c1ff;
+}
+
+#button1 {
+	color: white;
+	font-family: Consolas;
+	font-size: 18;
+	font-style: bold;
+	background: linear-gradient(180red, rgb(242, 24, 155) 0%,rgb(255, 0, 0) 100%);
+	border-radius: 50;
+}
+
+#button2 {
+	color: black;
+	font-family: Consolas;
+	font-size: 18;
+	font-style: bold;
+	background: #d7d7d7;
+	border-radius: 50;
+}
+
+#button3 {
+	color: black;
+	font-family: Consolas;
+	font-size: 18;
+	font-style: bold;
+	background: white;
+	border-radius: 50;
+	border-width: 3.0;
+	border-color: orangered;
+}
+
+#button4 {
+	color: orangered;
+	font-family: Consolas;
+	font-size: 18;
+	font-style: bold;
+	background: white;
+	border-radius: 50;
+	border-width: 3.0;
+	border-color: orangered;
+}
+
+switch {
+	color: #40cfff;
+	-xf-thumb-color: white;
+}
+
+#labelToSwitchOn_1 {
+	color: white;
+	font-size: 8;
+	line-height: 1.0;
+	max-width: 1;
+	margin-right: 12;
+	margin-top: 2;
+}
+
+#labelToSwitchOff_1 {
+	color: #40cfff;
+	font-size: 6.5;
+	line-height: 1.0;
+	max-width: 1;
+	margin-right: -11;
+	margin-top: 2;
+}
+
+#labelToSwitchOn_2 {
+	color: white;
+	font-size: 9;
+	line-height: 1.0;
+	margin-right: 12;
+	margin-top: 0;
+}
+
+#labelToSwitchOff_2 {
+	color: #40cfff;
+	font-size: 10;
+	line-height: 1.0;
+	margin-right: -10;
+	margin-top: 0;
+}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="App.InfoPage">
+
+	<CarouselPage.Children>
+
+		<ContentPage>
+
+			<ContentPage.Resources>
+				<StyleSheet Source="/mystyles.css" />
+			</ContentPage.Resources>
+
+			<!-- размещение элементов интерфейса для отображения переданных значений -->
+			<StackLayout>
+				<Label Text="{Binding SelectedItemText, StringFormat='Элемент в списке DROPDOWN: {0}'}" />
+				<Label Text="{Binding Slider1Value, StringFormat='Значение 1-го Slider: {0}'}" />
+				<Label Text="{Binding Slider2Value, StringFormat='Значение 2-го Slider: {0}'}" />
+				<Label Text="{Binding Slider3Value, StringFormat='Значение 3-го Slider: {0}'}" />
+				<Label Text="{Binding Slider4Value, StringFormat='Значение 4-го Slider: {0}'}" />
+				<Label Text="{Binding MaxSliderValueText}" />
+				<Label Text="{Binding IsSwitch1_1Toggled, StringFormat='Switch №1 (1 столбик): {0}'}" />
+				<Label Text="{Binding IsSwitch1_2Toggled, StringFormat='Switch №2 (1 столбик): {0}'}" />
+				<Label Text="{Binding IsSwitch1_3Toggled, StringFormat='Switch №3 (1 столбик): {0}'}" />
+				<Label Text="{Binding IsSwitch2_1Toggled, StringFormat='Switch №1 (2 столбик): {0}'}" />
+				<Label Text="{Binding IsSwitch2_2Toggled, StringFormat='Switch №2 (2 столбик): {0}'}" />
+				<Label Text="{Binding IsSwitch2_3Toggled, StringFormat='Switch №3 (2 столбик): {0}'}" />
+				<Label Text="{Binding RadioButtonStatus}" />
+				<Label Text="{Binding IsCheckBox1Checked, StringFormat='CheckBox1 №1: {0}'}" />
+				<Label Text="{Binding IsCheckBox2Checked, StringFormat='CheckBox1 №2: {0}'}" />
+			</StackLayout>
+		</ContentPage>
+	</CarouselPage.Children>
+</CarouselPage>

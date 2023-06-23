@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="App.Page1">
+
+	<CarouselPage.Resources>
+		<StyleSheet Source="/stylesPage1.css" />
+	</CarouselPage.Resources>
+
+	<CarouselPage.Children>
+
+		<ContentPage>
+
+			<StackLayout>
+				
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+
+					<Button x:Name="oneButton1"
+							Grid.Column="0" 
+							Grid.Row="0"
+							StyleId="button1"
+							Text="Button"
+							Clicked="oneButton1_Clicked"/>
+					<Button x:Name="oneButton2"
+							Grid.Column="1" 
+							Grid.Row="0"
+							StyleId="button1"
+							Text=">"/>
+					<Button x:Name="oneButton3"
+							Grid.Column="2" 
+							Grid.Row="0"
+							StyleId="button1"
+							Text="+"/>
+					<Button x:Name="oneButton4"
+							Grid.Column="3" 
+							Grid.Row="0"
+							StyleId="button1"
+							Text="▶"/>
+					<Button x:Name="oneButton5"
+							Grid.Column="4" 
+							Grid.Row="0"
+							StyleId="button1"
+							Text="✓"/>
+
+
+					<Button x:Name="twoButton1"
+							Grid.Column="0" 
+							Grid.Row="1"
+							StyleId="button2"
+							Text="Button"/>
+					<Button x:Name="twoButton2"
+							Grid.Column="1" 
+							Grid.Row="1"
+							StyleId="button2"
+							Text=">"/>
+					<Button x:Name="twoButton3"
+							Grid.Column="2" 
+							Grid.Row="1"
+							StyleId="button2"
+							Text="+"/>
+					<Button x:Name="twoButton4"
+							Grid.Column="3" 
+							Grid.Row="1"
+							StyleId="button2"
+							Text="▶"/>
+					<Button x:Name="twoButton5"
+							Grid.Column="4" 
+							Grid.Row="1"
+							StyleId="button2"
+							Text="✓"/>
+
+					<Button x:Name="threeButton1"
+							Grid.Column="0" 
+							Grid.Row="2"
+							StyleId="button3"
+							Text="Button"/>
+					<Button x:Name="threeButton2"
+							Grid.Column="1" 
+							Grid.Row="2"
+							StyleId="button3"
+							Text=">"/>
+					<Button x:Name="threeButton3"
+							Grid.Column="2" 
+							Grid.Row="2"
+							StyleId="button3"
+							Text="+"/>
+					<Button x:Name="threeButton4"
+							Grid.Column="3" 
+							Grid.Row="2"
+							StyleId="button3"
+							Text="▶"/>
+					<Button x:Name="threeButton5"
+							Grid.Column="4" 
+							Grid.Row="2"
+							StyleId="button3"
+							Text="✓"/>
+
+					<Button x:Name="fourButton1"
+							Grid.Column="0" 
+							Grid.Row="3"
+							StyleId="button4"
+							Text="Button"/>
+					<Button x:Name="fourButton2"
+							Grid.Column="1" 
+							Grid.Row="3"
+							StyleId="button4"
+							Text=">"/>
+					<Button x:Name="fourButton3"
+							Grid.Column="2" 
+							Grid.Row="3"
+							StyleId="button4"
+							Text="+"/>
+					<Button x:Name="fourButton4"
+							Grid.Column="3" 
+							Grid.Row="3"
+							StyleId="button4"
+							Text="▶"/>
+					<Button x:Name="fourButton5"
+							Grid.Column="4" 
+							Grid.Row="3"
+							StyleId="button4"
+							Text="✓"/>
+				</Grid>
+				
+                <Grid>
+                    <Grid.RowDefinitions>
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
+						<RowDefinition Height="40" />
+					</Grid.RowDefinitions>
+					
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="210" />
+						<ColumnDefinition Width="70" />
+						<ColumnDefinition Width="70" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+
+                    <BoxView Grid.Row="4" Grid.Column="0" BackgroundColor="#40cfff" />
+
+					<Slider x:Name="slider1"
+							Grid.Column="0" 
+							Grid.Row="0"
+							StyleId="slider1"
+							Minimum="0"
+							Maximum="100"/>
+
+					<Slider x:Name="slider2"
+							Grid.Column="0" 
+							Grid.Row="1"
+							StyleId="slider2"
+							Minimum="0"
+							Maximum="100"/>
+
+					<Slider x:Name="slider3"
+							Grid.Column="0" 
+							Grid.Row="2"
+							StyleId="slider2"
+							Minimum="0"
+							Maximum="3"/>
+					<BoxView BackgroundColor="#d7d7d7"
+							 Grid.Column="0"
+							 Grid.Row="2"
+							 WidthRequest="2"
+							 HeightRequest="4"
+							 HorizontalOptions="Center"
+							 Margin="58, 0, 0, 50"/>
+					<BoxView BackgroundColor="#d7d7d7"
+							 Grid.Column="0"
+							 Grid.Row="2"
+							 WidthRequest="2"
+							 HeightRequest="4"
+							 HorizontalOptions="Center"
+							 Margin="58, 0, 0, 50"/>
+
+					<Slider x:Name="slider4_2"
+							Grid.Column="0" 
+							Grid.Row="3"
+							StyleId="slider4"
+							Minimum="0"
+							Maximum="100"
+							ScaleX="-1"/>
+					<Slider x:Name="slider4_1"
+							Grid.Column="0" 
+							Grid.Row="3"
+							StyleId="slider4"
+							Minimum="0"
+							Maximum="100"
+							ValueChanged="slider4_1_ValueChanged"/>
+
+					<Switch x:Name="toggleSwitch1_1"
+							Grid.Column="1" 
+							Grid.Row="0" 
+							HorizontalOptions="Center"/>
+
+					<Switch x:Name="toggleSwitch1_2"
+							Grid.Column="1" 
+							Grid.Row="1" 
+							HorizontalOptions="Center"
+							Toggled="toggleSwitch1_2_Toggled"/>
+					<Label x:Name="onSwitch1_2"
+						   Grid.Column="1" 
+						   Grid.Row="1" 
+                           Text="ON"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOn_1"/>
+					<Label x:Name="offSwitch1_2"
+						   Grid.Column="1" 
+						   Grid.Row="1" 
+                           Text="OFF"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOff_1"/>
+
+					<Switch x:Name="toggleSwitch1_3"
+							Grid.Column="1" 
+							Grid.Row="2" 
+							HorizontalOptions="Center"
+							Toggled="toggleSwitch1_3_Toggled"/>
+					<Label x:Name="onSwitch1_3"
+						   Grid.Column="1" 
+						   Grid.Row="2" 
+						   Text="✔"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOn_2"/>
+					<Label x:Name="offSwitch1_3"
+						   Grid.Column="1" 
+						   Grid.Row="2" 
+						   Text="✖"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOff_2"/>
+
+					<Switch x:Name="toggleSwitch2_1"
+							Grid.Column="2" 
+							Grid.Row="0" 
+							HorizontalOptions="Center"/>
+
+					<Switch x:Name="toggleSwitch2_2"
+							Grid.Column="2" 
+							Grid.Row="1" 
+							HorizontalOptions="Center"
+							Toggled="toggleSwitch2_2_Toggled"/>
+					<Label x:Name="onSwitch2_2"
+						   Grid.Column="2" 
+						   Grid.Row="1" 
+                           Text="ON"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOn_1"/>
+					<Label x:Name="offSwitch2_2"
+						   Grid.Column="2" 
+						   Grid.Row="1" 
+                           Text="OFF"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOff_1"/>
+
+					<Switch x:Name="toggleSwitch2_3"
+							Grid.Column="2" 
+							Grid.Row="2" 
+							HorizontalOptions="Center"
+							Toggled="toggleSwitch2_3_Toggled"/>
+					<Label x:Name="onSwitch2_3"
+						   Grid.Column="2" 
+						   Grid.Row="2" 
+						   Text="✔"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOn_2"/>
+					<Label x:Name="offSwitch2_3"
+						   Grid.Column="2" 
+						   Grid.Row="2" 
+						   Text="✖"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center"
+						   StyleId="labelToSwitchOff_2"/>
+
+					<RadioButton x:Name="RadioButton1"
+								 Grid.Column="3" 
+								 Grid.Row="0" 
+								 VerticalOptions="Center"
+								 HorizontalOptions="Center"/>
+					<RadioButton x:Name="RadioButton2"
+								 Grid.Column="3" 
+								 Grid.Row="1" 
+								 VerticalOptions="Center"
+								 HorizontalOptions="Center"/>
+
+					<CheckBox x:Name="CheckBox1"
+							  Grid.Column="3" 
+							  Grid.Row="2" 
+							  VerticalOptions="Center"
+							  HorizontalOptions="Center"/>
+					<CheckBox x:Name="CheckBox2"
+							  Grid.Column="3" 
+							  Grid.Row="3" 
+							  VerticalOptions="Center"
+							  HorizontalOptions="Center"/>
+
+					<Picker x:Name="myPicker"
+							Title="DROPDOWN"
+							Grid.Column="0" 
+							Grid.Row="4" 
+							HorizontalOptions="Center"
+							VerticalOptions="Center"
+							BackgroundColor="#40cfff "
+							TextColor="White">
+
+						<Picker.ItemsSource>
+							<x:Array Type="{x:Type x:String}">
+								<x:String>Select One</x:String>
+								<x:String>Select Two</x:String>
+								<x:String>Select Three</x:String>
+								<x:String>Select Four</x:String>
+							</x:Array>
+						</Picker.ItemsSource>
+					</Picker>
+					
+
+				</Grid>
+				
+			</StackLayout>
+			
+		</ContentPage>
+
+	</CarouselPage.Children>
+
+</CarouselPage>
